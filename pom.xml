@@ -29,6 +29,7 @@
 	<modules>
 		<module>profiling</module>
 		<module>documentation</module>
+		<module>javadoc</module>
 	</modules>
 
 	<scm>
@@ -100,23 +101,6 @@
 	</build>
 
 	<profiles>
-		<profile>
-			<id>documentation</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<modules>
-				<module>documentation</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>skipDocs</id>
-			<activation>
-				<property>
-					<name>skipDocs</name>
-				</property>
-			</activation>
-		</profile>
 		<profile>
 			<id>m2e</id>
 			<activation>
